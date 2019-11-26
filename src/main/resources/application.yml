@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active: dev
+    application:
+      name: showcase
+---
+spring:
+  profiles: dev
+
+server:
+  port: 8081
+
+---
+spring:
+  profiles: prod
+
+server:
+  port: 8080
+---
+spring:
+    data:
+      mongodb:
+        uri: mongodb://114.116.9.214:27017/RRS
+---
+
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 791917934@qq.com
+    password: lxbtxhawxhpnbbbb
+    port: 587
+    default-encoding: UTF-8
+    from: 791917934@qq.com
+---
+spring:
+  rabbitmq.addresses: 0.0.0.0
